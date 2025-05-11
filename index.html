@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>My manhwa library</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My libraly</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>My library</h1>
+  <h1>📖 My library</h1>
 
   <form id="manga-form">
-    <label>ชื่อเรื่อง:</label>
-    <input type="text" id="title" required>
-
-    <label>ตอนล่าสุด:</label>
-    <input type="number" id="chapter" required>
-
-    <label>เลือกรูปปก:</label>
-    <input type="file" id="cover" accept="image/*">
-
-    <button type="submit">เพิ่มเรื่อง</button>
+    <input type="text" id="title" placeholder="ชื่อเรื่อง" required />
+    <input type="number" id="chapter" placeholder="ตอนล่าสุด" required />
+    <input type="date" id="date" required />
+    <input type="url" id="link" placeholder="ลิงก์ (ถ้ามี)" />
+    <input type="url" id="cover-url" placeholder="ลิงก์รูปภาพปก" />
+    <label>หรืออัปโหลดรูปภาพ:
+      <input type="file" id="cover-file" accept="image/*" />
+    </label>
+    <button type="submit" class="font">เพิ่มเรื่อง</button>
   </form>
 
-  <hr>
+  <div style="margin: 15px 0;">
+    🔍 <input type="text" id="search" placeholder="ค้นหาชื่อมังงะ..." />
+    <button id="sort-btn">เรียงตามตอนล่าสุด ↑</button>
+  </div>
 
   <div id="manga-list"></div>
 
