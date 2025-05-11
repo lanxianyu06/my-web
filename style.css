@@ -2,7 +2,7 @@
 
 body {
     font-family: sans-serif;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
     padding: 20px;
     background-color: burlywood
@@ -66,4 +66,51 @@ body {
   .manga-card button:hover {
     background: #cc0000;
   }
+  #title {
+    font-family: "Itim", cursive;
+    font-size: 20px;
+    color: #333;
+  }
+
+  #chapter {
+    font-family: "Itim", cursive;
+    font-size: 16px;
+    color: #666;
+  }
+
+  #date {
+    font-family: "Itim", cursive;
+    font-size: 14px;
+    color: #999;
+  }
   
+  #link {
+    font-family: "Itim", cursive;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  #cover-url {
+    font-family: "Itim", cursive;
+    font-size: 14px;
+    color: #666;
+  }
+
+  .font {
+    font-family: "Itim", cursive;
+    font-size: 14px;
+    color: #666;
+  }
+
+  #search {
+    font-family: "Itim", cursive;
+    font-size: 14px;
+    color: #666;
+  }
+
+  #sort-btn {
+    font-family: "Itim", cursive;
+    font-size: 14px;
+    color: #666;
+  }
